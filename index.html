@@ -20,13 +20,13 @@
           <div class="line">
             <!-- пользователь указывает нижнюю границу weight -->
             <div>min weight:</div>
-            <input class="minweight__input" id="minValue" />
+            <input oninput="channHandler(this)" class="minweight__input" id="minValue" />
           </div>
 
           <div class="line">
             <!-- пользователь указывает верхнюю границу weight -->
             <div>max weight:</div>
-            <input class="maxweight__input" id="maxValue" />
+            <input oninput="channHandler(this)" class="maxweight__input" id="maxValue" />
           </div>
 
           <!-- TODO: при нажатии элементы массива фильтруются в пределах [minweight, maxweight] -->
@@ -63,7 +63,7 @@
 
           <div class="line">
             <div>weight:</div>
-            <input class="weight__input" />
+            <input oninput="channHandler(this)" class="weight__input" />
           </div>
 
           <!-- TODO: при нажатии новый фрукт добавляется в конец списка -->

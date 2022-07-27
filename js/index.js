@@ -10,6 +10,13 @@ const kindInput = document.querySelector('.kind__input'); // поле с наз�
 const colorInput = document.querySelector('.color__input'); // поле с названием цвета
 const weightInput = document.querySelector('.weight__input'); // поле с весом
 const addActionButton = document.querySelector('.add__action__btn'); // кнопка добавления
+
+// функция реализующая введение в input только числа
+const channHandler = e => {
+  const value = e.value
+  e.value = value.replace(/\D/g,'')
+}
+
 // массив цветов (ключи соответсвуют классам)
 const classArray = [{
   "fruit_violet": "фиолетовый",
