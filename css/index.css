@@ -31,6 +31,7 @@ button {
   text-decoration: none;
   display: inline-block;
   max-width: fit-content;
+  cursor: pointer;
 }
 
 input {
@@ -125,6 +126,14 @@ main {
 
 .fruit_lightbrown {
   background: #cd853f;
+}
+
+.fruit_black {
+  background: #0c0109;
+}
+
+.fruit_orange {
+  background: #ffa500;
 }
 
 .fruit__info {
